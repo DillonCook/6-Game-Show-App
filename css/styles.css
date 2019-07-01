@@ -119,6 +119,14 @@ button {
   font-size: var(--font-size-medium);
 }
 
+.btn__reset:hover {
+  color: white;
+  background-color: #76CE82;
+  cursor: pointer;
+  transform: rotate(-3deg);
+  transition: color .2s, background-color .2s, transform .3s cubic-bezier(0.075, 0.82, 0.165, 3);
+}
+
 /* Overlay */
 
 #overlay {
