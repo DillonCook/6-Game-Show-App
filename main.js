@@ -35,7 +35,7 @@ function getRandomPhraseAsArray(a) {
             randomCharacters[i] = document.createElement('li');
             ul.appendChild(randomCharacters[i]);
     
-            if(randomCharacters[i] === ' '){
+            if(randomCharacters[i] !== ' '){
                 randomCharacters[i].className = "letter";
             } 
         }
