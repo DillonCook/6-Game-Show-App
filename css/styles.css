@@ -91,11 +91,46 @@ button {
 .space {
   width: 15px;
 }
-
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
 .show {
   color: #000;
   background-color: #76CE82;
+  transition: background-color 1s, width .3 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: swing 1s;
 }
+
 
 /* Keyboard */
 
