@@ -95,40 +95,34 @@ button {
 {
     15%
     {
-        -webkit-transform: translateY(5px);
-        transform: translateY(5px);
+        transform: translateY(10px);
     }
     30%
     {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
+        transform: translateY(-20px);
     }
     50%
     {
-        -webkit-transform: translateY(3px);
-        transform: translateY(3px);
+        transform: translateY(6px);
     }
     65%
     {
-        -webkit-transform: translateY(-3px);
-        transform: translateY(-3px);
+        transform: translateY(-6px);
     }
     80%
     {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px);
+        transform: translateY(3px);
     }
     100%
     {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
 .show {
   color: #000;
   background-color: #76CE82;
-  transition: background-color 1s cubic-bezier(.1, 0.885, 0.32, 1.7);
-  animation: swing 1s;
+  transition: background-color .75s ease-in-out;
+  animation: swing .8s;
 }
 
 
@@ -158,8 +152,8 @@ button {
   color: white;
   background-color: #76CE82;
   cursor: pointer;
-  transform: rotate(-3deg);
-  transition: color .2s, background-color .2s, transform .3s cubic-bezier(0.075, 0.82, 0.165, 3);
+  transform: scale(1.5);
+  transition: color .5s ease, background-color .5s ease, transform .5s cubic-bezier(0.075, 0.82, 0.165, 3);
 }
 
 .start-over {
@@ -175,8 +169,8 @@ button {
   color: white;
   background-color: var(--color-start);
   cursor: pointer;
-  transform: rotate(3deg);
-  transition: color .2s, background-color .2s, transform .3s cubic-bezier(0.075, 0.82, 0.165, 3);
+  transform: scale(1.5);
+  transition: color .2s ease-in, background-color .2s ease-in, transform .3s cubic-bezier(0.075, 0.82, 0.165, 3);
 }
 
 /* Overlay */

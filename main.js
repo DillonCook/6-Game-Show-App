@@ -74,16 +74,18 @@ qwerty.addEventListener('click', (e) => {
     if (button.tagName == 'BUTTON') {
         button.className = "chosen";
         button.disabled = 'true';
-    } else if (letterFound === null) {
-        let liveHeart = document.querySelector("img[src='images/liveHeart.png']");
-        let lostHeart = document.createElement('IMG');
-        lostHeart.setAttribute('src','images/lostHeart.png');
-        lostHeart.setAttribute('height','35px');
-        lostHeart.setAttribute('width','35px');
-        liveHeart.replaceWith(lostHeart);
-        missed ++;
-    }  
-    checkWin();
+
+        if (letterFound === null) {
+            let liveHeart = document.querySelector("img[src='images/liveHeart.png']");
+            let lostHeart = document.createElement('IMG');
+            lostHeart.setAttribute('src','images/lostHeart.png');
+            lostHeart.setAttribute('height','35px');
+            lostHeart.setAttribute('width','35px');
+            liveHeart.replaceWith(lostHeart);
+            missed ++;
+        }
+        checkWin();
+    } 
     console.log(e.target.textContent);
 });
 
@@ -120,7 +122,7 @@ function restart() {
     overlay.removeChild(startButton);
     overlay.appendChild(startOver);
 
-    startOver.innerHTML = "Try Again!";
+    startOver.innerHTML = "Go At It Again!";
     startOver.classList.add('start-over');
 }
 
@@ -128,9 +130,10 @@ startOver.addEventListener('click', function(){
     location.reload(true);
 });
 
-function afterStartOver() {
-    overlay.style.display = 'none';
-}
+
+// function afterStartOver() {
+//     overlay.style.display = 'none';
+// }
 
 
 
