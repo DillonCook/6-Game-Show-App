@@ -10,7 +10,7 @@ let missed = 0;
 
 // Array of phrases 
 const phraseList = [
-    "DONT DRINK AND DRIVE",
+    "DONT LET ME DOWN",
     "DONT TOUCH WET PAINT",
     "WHATS YOUR POINT",
     "SO WHAT HAD HAPPENED WAS",
@@ -129,15 +129,3 @@ function restart() {
 startOver.addEventListener('click', function(){
     location.reload(true);
 });
-
-
-// function afterStartOver() {
-//     overlay.style.display = 'none';
-// }
-
-
-
-
-
-
-
